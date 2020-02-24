@@ -20,3 +20,8 @@ $("input[type='text']").keypress(function(e){
         $(this).val("");
     }
 });
+
+// Click on icon plus to open and close input
+$(".fa-plus").click(function(){
+    $("input[type='text']").fadeToggle();
+});
